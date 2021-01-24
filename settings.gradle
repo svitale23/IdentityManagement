@@ -1,2 +1,2 @@
-rootProject.name='Identity Management'
 include ':app'
+rootProject.name = "IDM 2"

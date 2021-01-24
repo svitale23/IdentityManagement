@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/IdentityManagement.iml" filepath="$PROJECT_DIR$/IdentityManagement.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Identity_Management.iml" filepath="$PROJECT_DIR$/.idea/modules/Identity_Management.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Identity_Management.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Identity_Management.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/IDM_2.iml" filepath="$PROJECT_DIR$/.idea/modules/IDM_2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/IDM_2.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/IDM_2.app.iml" />
     </modules>
   </component>
 </project>
