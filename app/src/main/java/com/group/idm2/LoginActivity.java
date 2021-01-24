@@ -27,12 +27,13 @@ import java.util.List;
 
 public class LoginActivity extends AsyncTask<String, Void, String> {
     private Context context;
-    private String username, password;
+    private String username, password, type;
 
-    public LoginActivity(Context context, String username, String password) {
+    public LoginActivity(Context context, String username, String password, String type) {
         this.context = context;
         this.username = username;
         this.password = password;
+        this.type = type;
     }
 
     protected String doInBackground(String... arg0) {
@@ -41,7 +42,7 @@ public class LoginActivity extends AsyncTask<String, Void, String> {
             String username = this.username;
             String password = this.password;
 
-            String link="http://10.0.2.2/identitymanagement/login.php";
+            String link="http://10.0.2.2/identitymanagement/" + this.type + ".php";
             String data  = URLEncoder.encode("username", "UTF-8") + "=" +
                     URLEncoder.encode(username, "UTF-8");
             data += "&" + URLEncoder.encode("password", "UTF-8") + "=" +

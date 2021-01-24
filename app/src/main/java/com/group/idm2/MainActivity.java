@@ -10,7 +10,7 @@ import android.widget.EditText;
 public class MainActivity extends AppCompatActivity {
 
     private EditText usernameET, passwordET;
-    Button loginButton;
+    Button loginButton, registerButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,10 +22,12 @@ public class MainActivity extends AppCompatActivity {
     public void login(View view) {
         String username = usernameET.getText().toString();
         String password = passwordET.getText().toString();
-        new LoginActivity(this, username, password).execute(username, password);
+        new LoginActivity(this, username, password, "login").execute(username, password);
     }
 
     public void register(View view) {
-        System.out.println("register");
+        String username = usernameET.getText().toString();
+        String password = passwordET.getText().toString();
+        new LoginActivity(this, username, password, "register").execute(username, password);
     }
 }
